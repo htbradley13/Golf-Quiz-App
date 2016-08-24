@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.startPage {
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.startQuizButton {
+	padding: 5px;
+}
