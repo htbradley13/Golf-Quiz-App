@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.startPage {
+#startPage {
 	text-align: center;
 	margin: 0 auto;
 }
@@ -11,6 +11,6 @@ h1 {
 	text-align: center;
 }
 
-.startQuizButton {
+.button {
 	padding: 5px;
 }
