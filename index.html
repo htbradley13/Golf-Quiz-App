@@ -20,31 +20,74 @@
 		<h1>Golf Quiz</h1>
 
 		<div class="quizControlButtons">
-			<button class="button">Start</button>
+			<button class="button" id="startButton">Start</button>
 		</div>
 
 	</div>
 
-	<!-- This is the page for question number 1 -->
-	<div class="pages" id="questionOne">
+	<header class="questionHeader">
 
 		<h1>Question #<span id="questionCount">1</span> of 5, Score: <span id="totalCorrect">0</span>/5
 		</h1>
+
+	</header>
+		<!-- This is the page for question number 1 -->
+	<div class="pages" id="questionOne">
 
 		<!-- Question -->
 		<h3>Which of the following would be the winning score?</h3>
 
 		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
-		<form>
-			<input type="radio" name="answersOne" class="choiceA" required>
+		<form id="questionOneAnswers">
+			<input type="radio" name="answersOne" class="choiceA" value="0" required>
 			<label>A: (-2)</label>	
-			<input type="radio" name="answersOne" class="choiceB" required>
+			<input type="radio" name="answersOne" class="choiceB" value="1" required>
 			<label>B: (-1)</label>	
-			<input type="radio" name="answersOne" class="choiceC" required>
+			<input type="radio" name="answersOne" class="choiceC" value="2" required>
 			<label>C: (+1)</label>	
-			<input type="radio" name="answersOne"  class="choiceD" required>
+			<input type="radio" name="answersOne" class="choiceD" value="3" required>
 			<label>D: (+2)</label>	
 			<input type="submit" name="answersOne" class="button" value="Submit">
+		</form>
+
+	</div>
+
+	<div class="pages" id="questionTwo">
+
+		<!-- Question -->
+		<h3>You currently have a score of +2, and then you birdie a hole. What is your score now?</h3>
+
+		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
+		<form id="questionTwoAnswers">
+			<input type="radio" name="answersTwo" class="choiceA" value="0" required>
+			<label>A: (+3)</label>	
+			<input type="radio" name="answersTwo" class="choiceB" value="1" required>
+			<label>B: (0)</label>	
+			<input type="radio" name="answersTwo" class="choiceC" value="2" required>
+			<label>C: (-2)</label>	
+			<input type="radio" name="answersTwo" class="choiceD" value="3" required>
+			<label>D: (+1)</label>	
+			<input type="submit" name="answersTwo" class="button" value="Submit">
+		</form>
+
+	</div>
+
+	<div class="pages" id="questionThree">
+
+		<!-- Question -->
+		<h3>You are on a par 4 hole. You make the ball in the cup on your second shot. What is this known as?</h3>
+
+		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
+		<form id="questionThreeAnswers">
+			<input type="radio" name="answersThree" class="choiceA" value="0" required>
+			<label>A: A Hole in Two</label>	
+			<input type="radio" name="answersThree" class="choiceB" value="1" required>
+			<label>B: An Eagle</label>	
+			<input type="radio" name="answersThree" class="choiceC" value="2" required>
+			<label>C: A Bogey</label>	
+			<input type="radio" name="answersThree" class="choiceD" value="3" required>
+			<label>D: A Par</label>	
+			<input type="submit" name="answersThree" class="button" value="Submit">
 		</form>
 
 	</div>

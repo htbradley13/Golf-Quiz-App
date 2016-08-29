@@ -14,3 +14,7 @@ h1 {
 .button {
 	padding: 5px;
 }
+
+#questionOne, .questionHeader, #questionTwo, #questionThree {
+	display: none;
+}
