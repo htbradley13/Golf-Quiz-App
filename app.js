@@ -17,15 +17,15 @@ $(document).ready(function() {
         var correctAnswerCount = +($("#totalCorrect").text());
 
 	/* Declaring questionCount running total function */
-    function questionCountTally (x) {
-          var newCount = x + 1;
-          $("#questionCount").text(newCount);
+    function questionCountTally () {
+           currentQuestion += 1;
+          $("#questionCount").text(currentQuestion);
     }
 
     /* Declaring correctAnswer running total function */
-    function correctAnswerTally (x) {
-          var correctCount = x + 1;
-          $("#totalCorrect").text(correctCount);
+    function correctAnswerTally () {
+           correctAnswerCount += 1;
+          $("#totalCorrect").text(correctAnswerCount);
     }
 
 	/* Setting Quiz Answer Key Object */
@@ -60,7 +60,7 @@ $(document).ready(function() {
 			$("#questionTwo").show();
 
 			/* invokes correctAnswerTally function */
-			correctAnswerTally(correctAnswerCount); 
+			correctAnswerTally(); 
 		}
 		else {
 			alert("Incorrect. The correct answer is A: (-2)");
@@ -69,7 +69,7 @@ $(document).ready(function() {
 		}
 
         /* Invoke question count tally function */
-        questionCountTally(currentQuestion);
+        questionCountTally();
 
     $("#questionTwoAnswers").submit(function(event) {
 
@@ -91,7 +91,7 @@ $(document).ready(function() {
 			$("#questionThree").show();
 
 			/* invokes correctAnswerTally function */
-			correctAnswerTally(correctAnswerCount); 
+			correctAnswerTally(); 
 		}
 		else {
 			alert("Incorrect. The correct answer is D: (+1)");
@@ -100,8 +100,7 @@ $(document).ready(function() {
 		}
 
         /* Invoke question count tally function */
-        questionCountTally(currentQuestion);
-
+        questionCountTally();
 
 	});
 
