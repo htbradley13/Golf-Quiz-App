@@ -27,8 +27,8 @@
 
 	<header class="questionHeader">
 
-		<h1>Question #<span id="questionCount">1</span> of 5, Score: <span id="totalCorrect">0</span>/5
-		</h1>
+		<h1 id="questionLine">Question #<span id="questionCount">1</span> of 5</h1>
+		<h1 id="scoreLine">Score: <span id="totalCorrect">0</span>/5</h1>
 
 	</header>
 		<!-- This is the page for question number 1 -->
@@ -92,6 +92,53 @@
 
 	</div>
 
+	<div class="pages" id="questionFour">
+
+		<!-- Question -->
+		<h3>Typically, the longest club in a players bag is which of the following?</h3>
+
+		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
+		<form id="questionFourAnswers">
+			<input type="radio" name="answersFour" class="choiceA" value="0" required>
+			<label>A: Pitching Wedge</label>	
+			<input type="radio" name="answersFour" class="choiceB" value="1" required>
+			<label>B: 6 Iron</label>	
+			<input type="radio" name="answersFour" class="choiceC" value="2" required>
+			<label>C: 5 Wood</label>	
+			<input type="radio" name="answersFour" class="choiceD" value="3" required>
+			<label>D: Driver</label>	
+			<input type="submit" name="answersFour" class="button" value="Submit">
+		</form>
+
+	</div>
+
+	<div class="pages" id="questionFive">
+
+		<!-- Question -->
+		<h3>On your second shot, you hit the ball into the water. You must take a drop. When you hit your next shot, which shot number will you be hitting?</h3>
+
+		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
+		<form id="questionFiveAnswers">
+			<input type="radio" name="answersFive" class="choiceA" value="0" required>
+			<label>A: 2</label>	
+			<input type="radio" name="answersFive" class="choiceB" value="1" required>
+			<label>B: 1</label>	
+			<input type="radio" name="answersFive" class="choiceC" value="2" required>
+			<label>C: 4</label>	
+			<input type="radio" name="answersFive" class="choiceD" value="3" required>
+			<label>D: 3</label>	
+			<input type="submit" name="answersFive" class="button" value="Submit">
+		</form>
+
+	</div>
+
+	<div class="pages" id="finalPage">
+
+		<div class="quizControlButtons">
+			<button class="button" id="newGameButton">New Game</button>
+		</div>
+
+	</div>
 
 <!-- JavaScript Sources -->
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
