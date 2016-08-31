@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-#startPage {
+#startPage, #finalPage {
 	text-align: center;
 	margin: 0 auto;
 }
